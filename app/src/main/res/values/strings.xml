@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Flash Cards</string>
+    <string name="cards">Cards</string>
+    <string name="study_time">Study Time</string>
+    <string name="character">Character</string>
+    <string name="hint">hint</string>
+    <string name="pinyin">Pinyin</string>
+    <string name="english">English</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="list_of_cards">List of cards</string>
+    <string name="add_new_card">Add new Card</string>
+    <string name="textview">TextView</string>
+    <string name="new_card">New Card</string>
+    <string name="value">value</string>
+    <string name="your_flash_cards">Your Flash Cards</string>
+    <string name="time_to_study">Time To Study!</string>
+    <string name="edit_card">Edit Flash Card</string>
+    <string name="re_turn">Return</string>
+    <string name="cancel">Cancel</string>
+    <string name="translation">translation</string>
+    <string name="description">description</string>
+    <string name="definition">Definition</string>
+    <string name="example">example</string>
+    <string name="character_example">例子</string>
+    <string name="l_zi">lìzi</string>
+    <string name="pronunciation">Pronunciation</string>
+    <string name="vocabulary">Vocabulary</string>
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f8e9">
+
+    <Button
+        android:id="@+id/button_new_card"
+        android:layout_width="160dp"
+        android:layout_height="56dp"
+        android:drawableRight="@drawable/right_arrow"
+        android:text="@string/new_card"
+        app:layout_constraintBottom_toTopOf="@+id/button_cancel_st"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.591" />
+
+    <Button
+        android:id="@+id/button_cancel_st"
+        android:layout_width="160dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="120dp"
+        android:drawableLeft="@drawable/ic_baseline_arrow_back_24"
+        android:text="@string/cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="383dp"
+        android:layout_height="283dp"
+        android:layout_marginTop="100dp"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/button_left_st"
+            android:layout_width="185dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="180dp"
+            android:backgroundTint="@color/clear"
+            android:fontFamily="@font/architects_daughter"
+            android:text="@string/pronunciation"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:rippleColor="#004CAF50" />
+
+        <Button
+            android:id="@+id/button_right_st"
+            android:layout_width="185dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="190dp"
+            android:layout_marginTop="180dp"
+            android:backgroundTint="@color/clear"
+            android:fontFamily="@font/architects_daughter"
+            android:text="@string/translation"
+            android:textColor="@color/black"
+            android:textColorLink="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/text_view_card_value"
+            android:layout_width="249dp"
+            android:layout_height="104dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="55dp"
+            android:text="@string/value"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="40sp" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

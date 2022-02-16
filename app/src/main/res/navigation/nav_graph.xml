@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/cardListFragment">
+    <fragment
+        android:id="@+id/cardDetailFragment"
+        android:name="com.example.uitestin.CardDetailFragment"
+        android:label="@string/add_new_card">
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="card_id"
+            android:defaultValue="-1"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_cardDetailFragment_to_cardListFragment"
+            app:destination="@id/cardListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cardListFragment"
+        android:name="com.example.uitestin.CardListFragment"
+        android:label="@string/your_flash_cards">
+        <action
+            android:id="@+id/action_cardListFragment_to_cardDetailFragment"
+            app:destination="@id/cardDetailFragment" />
+        <action
+            android:id="@+id/action_cardListFragment_to_studyTimeFragment"
+            app:destination="@id/studyTimeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studyTimeFragment"
+        android:name="com.example.uitestin.StudyTimeFragment"
+        android:label="@string/time_to_study" >
+        <action
+            android:id="@+id/action_studyTimeFragment_to_cardListFragment"
+            app:destination="@id/cardListFragment" />
+    </fragment>
+</navigation>
